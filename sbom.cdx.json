@@ -1,0 +1,46 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:dfe116bf-ad51-51be-ad5e-2b2e5c62605c",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-12T06:26:21Z",
+    "component": {
+      "type": "application",
+      "name": "TOBII_STREAM",
+      "version": "1f5d4ac07578",
+      "bom-ref": "pkg:generic/anticloud/TOBII_STREAM@1f5d4ac07578",
+      "purl": "pkg:generic/anticloud/TOBII_STREAM@1f5d4ac07578",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "1f5d4ac07578e438917e1af89eed97dc1678a3ed"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": ""
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "TittaPy",
+      "version": ">=2",
+      "purl": "pkg:pypi/tittapy@2",
+      "bom-ref": "pypi/TittaPy@>=2"
+    }
+  ]
+}
