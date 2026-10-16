@@ -2,13 +2,11 @@
  "schema": "anticloud.tier-bench/1",
  "project": "TOBII_STREAM",
  "source": {
-  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\PSYCHOLOGY\\TOBII_STREAM\\UPSTREAM_CLONE",
   "git": {
-   "head": "1f5d4ac07578e438917e1af89eed97dc1678a3ed",
-   "url": "https://github.com/marcus-nystrom/Titta",
-   "branch": "master",
-   "committed_at": "",
-   "sha_verified_from": "GitHub API substitute swap 2026-10-12 | unified 2026-10-14 (API-exists + content/clone anchor)"
+   "url": "https://github.com/GazePlay/TobiiStreamEngineForJava",
+   "head": "58def355f05f411e49f1f5116b689b5ccaa58b61",
+   "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
+   "previous_substitute": "https://github.com/marcus-nystrom/Titta"
   }
  },
  "metrics": {

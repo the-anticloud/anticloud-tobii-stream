@@ -1,14 +1,14 @@
 # TOBII_STREAM
 
-> Titta is a toolbox for using eye trackers from Tobii Pro AB with Python, specifically offering integration with [PsychoPy](https://www.psychopy.org/). A Matlab version that integrates with PsychToolbox is also available from https://github.com/dcnieho/Titta. For a similar toolbox for SMI eye trackers, please see www.github.com/marcus-nystrom/SMITE.
+> This project allows you to use the Tobii Core SDK Stream Engine API in Java language through the Java Native Interface (JNI)
 
-**Category:** PSYCHOLOGY · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/marcus-nystrom/Titta · **Pinned commit:** `1f5d4ac07578e438917e1af89eed97dc1678a3ed` · **Vendor:** Anticloud FZ LLE
+**Category:** PSYCHOLOGY · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/GazePlay/TobiiStreamEngineForJava · **Pinned commit:** `58def355f05f411e49f1f5116b689b5ccaa58b61` · **Vendor:** Anticloud FZ LLE
 
-> **Note:** this package vendors `https://github.com/marcus-nystrom/Titta` as the implementation for the `TOBII_STREAM` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
+> **Note:** this package vendors `https://github.com/GazePlay/TobiiStreamEngineForJava` as the implementation for the `TOBII_STREAM` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
 
 ## What This Project Is
 
-Titta is a toolbox for using eye trackers from Tobii Pro AB with Python, specifically offering integration with [PsychoPy](https://www.psychopy.org/). A Matlab version that integrates with PsychToolbox is also available from https://github.com/dcnieho/Titta. For a similar toolbox for SMI eye trackers, please see www.github.com/marcus-nystrom/SMITE.
+This project allows you to use the Tobii Core SDK Stream Engine API in Java language through the Java Native Interface (JNI)
 
 This is the upstream project, vendored at the pinned commit above and packaged offline-first. The 12 improvements Anticloud adds live in `anticloud/` and are described under *Anticloud Overlay* below. Every fact in this file traces to a file in this directory.
 
@@ -20,34 +20,7 @@ This is the upstream project, vendored at the pinned commit above and packaged o
 
 ## Usage
 
-As demonstrated in the demo scripts, the toolbox is configured through
-the following interface:
-1. Retrieve (default) settings for eye tracker of interest: `settings =
-Titta.getDefaults('tracker model name');` Supported eye trackers and their corresponding model names in the Tobii Pro SDK/Titta are:
-
-    |Eye tracker|Model name|
-    |---|---|
-    |**Tobii Pro Spectrum**|`Tobii Pro Spectrum`|
-    |**Tobii Pro Fusion**|`Tobii Pro Fusion`|
-    |Tobii Pro TX300|`Tobii TX300`|
-    |Tobii Pro T60 XL|`Tobii T60 XL`|
-    |**Tobii Pro Nano**|`Tobii Pro Nano`|
-    |**Tobii Pro Spark**|`Tobii Pro Spark`|
-    |**Tobii Pro X3-120**|`Tobii Pro X3-120` or `Tobii Pro X3-120 EPU`|
-    |Tobii Pro X2-60|`X2-60_Compact`|
-    |**Tobii Pro X2-30**|`X2-30_Compact`|
-    |Tobii Pro X60|`Tobii X60`|
-    |Tobii Pro X120|`Tobii X120`|
-    |Tobii Pro T60|`Tobii T60`|
-    |Tobii Pro T120|`Tobii T120`|
-    |**Tobii 4C (Upgrade Key required)**|`IS4_Large_Peripheral`|
-
-    Eye trackers marked in **bold** font have been tested. Note that the VR eye trackers are not supported by Titta. Also note that the Tobii 4C cannot be used for research purposes without buying the Pro Upgrade Key, and is compatible with Titta only after this purchase. Unfortunately, the Pro Upgrade Key is no longer sold by Tobii.
-
-2. Change settings from their defaults if wanted.
-3. Create a Titta instance using this settings struct: `tracker = Titta(settings);`
-4. Interact with the eye tracker using the Titta API.
-5. When calling `Titta.calibrate()`, a participant setup and calibration interface is shown. For each screen, several keyboard hotkeys are available to activate certain functionality. By default, the hotkey for each button is printed in the button's label.
+See the upstream README (linked above) for usage. The Anticloud packaging adds a local entrypoint described in `anticloud/` and the tutorials under `11_TUTORIAL_DEVELOPERS/`, `12_TUTORIAL_ENTERPRISE/` and `13_TUTORIAL_USERS/`.
 
 ## Anticloud Overlay
 
@@ -89,7 +62,7 @@ The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The 
 SHA3-256 of `BENCH.json`:
 
 ```
-462d28b6d3604cb804f9903fb73abd62a8d606fd8a193ab01f71a7f9a1dd3be1
+7a886430be1489af6fa066c17973fa838969ca030e9e5b20fb873cc17c66f50f
 ```
 
 Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.
